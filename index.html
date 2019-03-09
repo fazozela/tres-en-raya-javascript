@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td id="c11" onclick="Marcar(document.getElementById('c11'))"></td>
+			<td id="c12" onclick="Marcar(document.getElementById('c12'))"></td>
+			<td id="c13" onclick="Marcar(document.getElementById('c13'))"></td>
+		</tr>
+
+		<tr>
+			<td id="c21" onclick="Marcar(document.getElementById('c21'))"></td>
+			<td id="c22" onclick="Marcar(document.getElementById('c22'))"></td>
+			<td id="c23" onclick="Marcar(document.getElementById('c23'))"></td>
+		</tr>
+
+		<tr>
+			<td id="c31" onclick="Marcar(document.getElementById('c31'))"></td>
+			<td id="c32" onclick="Marcar(document.getElementById('c32'))"></td>
+			<td id="c33" onclick="Marcar(document.getElementById('c33'))"></td>
+		</tr>
+	</table>
+
+	<script>
+		var x=true;
+
+		var ganar=false;
+
+		function Ganador()
+		{
+			var c11=document.getElementById('c11');
+			var c12=document.getElementById('c12');
+			var c13=document.getElementById('c13');
+			var c21=document.getElementById('c21');
+			var c22=document.getElementById('c22');
+			var c23=document.getElementById('c23');
+			var c31=document.getElementById('c31');
+			var c32=document.getElementById('c32');
+			var c33=document.getElementById('c33');
+
+			if(((c11.innerHTML=='X') && (c12.innerHTML=='X') && (c13.innerHTML=='X'))||((c11.innerHTML=='O') && (c12.innerHTML=='O') && (c13.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c11.setAttribute("class","animated infinite bounce");
+				c12.setAttribute("class","animated infinite bounce");
+				c13.setAttribute("class","animated infinite bounce");
+				c11.style.color="green";
+				c12.style.color="green";
+				c13.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c21.innerHTML=='X') && (c22.innerHTML=='X') && (c23.innerHTML=='X'))||((c21.innerHTML=='O') && (c22.innerHTML=='O') && (c23.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c21.setAttribute("class","animated infinite bounce");
+				c22.setAttribute("class","animated infinite bounce");
+				c23.setAttribute("class","animated infinite bounce");
+				c21.style.color="green";
+				c22.style.color="green";
+				c23.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c31.innerHTML=='X') && (c32.innerHTML=='X') && (c33.innerHTML=='X'))||((c31.innerHTML=='O') && (c32.innerHTML=='O') && (c33.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c31.setAttribute("class","animated infinite bounce");
+				c32.setAttribute("class","animated infinite bounce");
+				c33.setAttribute("class","animated infinite bounce");
+				c31.style.color="green";
+				c32.style.color="green";
+				c33.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c11.innerHTML=='X') && (c22.innerHTML=='X') && (c33.innerHTML=='X'))||((c11.innerHTML=='O') && (c22.innerHTML=='O') && (c33.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c11.setAttribute("class","animated infinite bounce");
+				c22.setAttribute("class","animated infinite bounce");
+				c33.setAttribute("class","animated infinite bounce");
+				c11.style.color="green";
+				c22.style.color="green";
+				c33.style.color="green";
+
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c13.innerHTML=='X') && (c22.innerHTML=='X') && (c31.innerHTML=='X'))||((c13.innerHTML=='O') && (c22.innerHTML=='O') && (c31.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c13.setAttribute("class","animated infinite bounce");
+				c22.setAttribute("class","animated infinite bounce");
+				c31.setAttribute("class","animated infinite bounce");
+				c13.style.color="green";
+				c22.style.color="green";
+				c31.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c13.innerHTML=='X') && (c23.innerHTML=='X') && (c33.innerHTML=='X'))||((c13.innerHTML=='O') && (c23.innerHTML=='O') && (c33.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c13.setAttribute("class","animated infinite bounce");
+				c23.setAttribute("class","animated infinite bounce");
+				c33.setAttribute("class","animated infinite bounce");
+				c13.style.color="green";
+				c23.style.color="green";
+				c33.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c12.innerHTML=='X') && (c22.innerHTML=='X') && (c32.innerHTML=='X'))||((c12.innerHTML=='O') && (c22.innerHTML=='O') && (c32.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c12.setAttribute("class","animated infinite bounce");
+				c22.setAttribute("class","animated infinite bounce");
+				c32.setAttribute("class","animated infinite bounce");
+				c12.style.color="green";
+				c22.style.color="green";
+				c32.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+			if(((c11.innerHTML=='X') && (c21.innerHTML=='X') && (c31.innerHTML=='X'))||((c11.innerHTML=='O') && (c21.innerHTML=='O') && (c31.innerHTML=='O')))
+			{
+				ganar=true;
+				alert("FELICIDADES JEFE GANASTE! :) ");
+				c11.setAttribute("class","animated infinite bounce");
+				c21.setAttribute("class","animated infinite bounce");
+				c31.setAttribute("class","animated infinite bounce");
+				c11.style.color="green";
+				c21.style.color="green";
+				c31.style.color="green";
+			}
+
+			else
+			{
+				ganar=false;
+			}
+
+
+		}
+
+		function Marcar(nodo)
+		{
+			var marca;
+
+			if(ganar==false)
+				{
+						if (! nodo.firstChild) 
+						{
+							if (x==true) 
+							{
+								marca=document.createTextNode("X");
+								x=false
+							}
+
+							else
+							{
+								marca=document.createTextNode("O");
+								x=true;
+							}
+
+							nodo.appendChild(marca);
+						}
+
+						else
+						{
+							alert("NO JEFE NOOOO! ESTA CASILLA ESTA MARCADA!!");
+						}
+
+						Ganador();
+					}
+				}
+
+		function Limpiar()
+		{
+			
+		}
+
+			
+	</script>
+
+	<button onclick="Limpiar()">
+		Limpiar
+	</button>
+		}
+		}
+
+</body>
+</html>
